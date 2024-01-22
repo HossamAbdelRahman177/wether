@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- {{{{{{{{Nav__Data}}}}}}}}-->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand  m-auto fs-3" href="#">Weather Api</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">About Weather</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact/contact.html" target="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- {{{{{{{{Search Input....}}}}}}}}-->
+  <form class="spacing container">
+    <input id="demo" class="mt-5 form-control w-100 " type="text"
+      placeholder="Search City Name Arabic or English .......">
+  </form>
+ <!-- {{{{{{{{All__Data}}}}}}}}-->
+  <section class="spacing">
+    <div class="container ">
+      <div class="row g-5">
+        <!-- {{{{{{{Day__Data}}}}}}}}-->
+        <div class="col-xl-4 col-lg-6 col-md-12 col-s-12 rounded-1">
+          <div class="item">
+            <div class="title_Today d-flex justify-content-around bg text-light border-1 w-75 m-auto">
+              <h5 id="dayTitle">FRIDAY</h5>
+              <h5 id="dataTitle">30</h5>
+              <h5 class="text-light" id="month"></h5>
+            </div>
+            <h5 class="mt-3 text-center text-light bg w-50" id="cityToday">Cairo</h5>
+            <div class="d-flex justify-content-center">
+              <img src="116.webp" alt="" id="imggStatus">
+            </div>
+            <div class=" bg text-light font d-flex justify-content-center">
+              <h1 id="tembC">
+                19
+              </h1>
+              <span class=" ms-1 text-info"><sup>o</sup>C</span>
+            </div>
+            <h6 class=" bg  text-center py-1
+            mt-4 text-info rounded-1 w-75 m-auto" id="descRep">Partly cloudy
+            </h6>
+            <div class="Icons  w-75 bg mt-5 m-auto rounded-1 d-flex justify-content-around">
+              <i class="text-info fa-solid fa-umbrella fa-fade"></i>
+              <span class="text-light" id="humidity">0%</span>
+              <i class=" text-info fa-solid fa-wind fa-fade"></i>
+              <span class="text-light" id="wind_kph">6.8</span>
+              <i class=" text-info  fa-solid fa-compass fa-fade"></i>
+              <span class="text-light" id="Wind_dr">D</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- {{{{{{{{Next__Day__Data}}}}}}}}-->
+        <div class="col-xl-4 col-lg-6 col-md-12 col-s-12 rounded-1">
+          <div class="item">
+            <div class="title_Today d-flex justify-content-around bg text-light border-1 w-75 m-auto">
+              <h5 class="nextdayTitle">FRIDAY</h5>
+            </div>
+
+            <div class="d-flex justify-content-center mt-5">
+              <img class="imgStatus" src="116.webp" alt="">
+            </div>
+            <div class=" bg text-light font d-flex justify-content-center">
+              <h1 class="temb__C">
+                19
+              </h1>
+              <span class=" ms-1 text-info">C</span>
+            </div>
+            <h6 class=" mintempc  bg  text-center py-1
+            mt-4 text-info rounded-1 w-75 m-auto" id="descnextRep">
+              5
+            </h6>
+            <div class="w-75 text-info bg mt-5 m-auto rounded-1 d-flex justify-content-around">
+              <span class="nextdecp">Sunny</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12 col-s-12 rounded-1">
+          <div class="item">
+            <div class="title_Today d-flex justify-content-around bg text-light border-1 w-75 m-auto">
+              <h5 class="nextdayTitle">FRIDAY</h5>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <img class="imgStatus" src="116.webp" alt="" id="">
+            </div>
+            <div class=" bg text-light font d-flex justify-content-center">
+              <h1 class="temb__C">
+                19
+
+              </h1>
+              <span class=" ms-1 text-info">C</span>
+            </div>
+            <h6 class="mintempc  bg  text-center py-1
+            mt-4 text-info rounded-1 w-75 m-auto" id="descRep">
+              5
+            </h6>
+
+
+            <div class="w-75 text-info bg mt-5 m-auto rounded-1 d-flex justify-content-around">
+              <span class="nextdecp">Sunny</span>
+            </div>
+          </div>
+        </div>
+         <!-- {{{{{{{{ُEnd__Day__Data}}}}}}}}-->
+      </div>
+    </div>
+  </section>
+  <!-- {{{{{{{{{{Start_Foter}}}}}}}}}} -->
+  <footer class="text-center fixed-bottom">
+    <p>Thanks For Your Vist App</p>
+  </footer>
+  <!-- {{{{{{{{{{End_Weather Api}}}}}}}}}} -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
